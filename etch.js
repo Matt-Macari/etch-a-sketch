@@ -1,10 +1,17 @@
 
+function makeGrid(numGrid) {
+    const container = document.getElementById("div-container");
 
-const container = document.getElementById("div-container");
+    for (i = 0; i < numGrid * numGrid; i++) {
+        container.innerHTML += '<div id="box"></div>';
+        const box = document.getElementById('box');
+        box.addEventListener('mouseover', colorSquare);
 
-for (i = 0; i < 256; i++) {
-    container.innerHTML += '<div class="box">box</div>';
+    };
 };
+
+makeGrid(24);
+
 
 
 
