@@ -1,14 +1,17 @@
 #div-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid salmon;
+    height: 50%;
+    width: 50%;
+    border: 2px solid salmon;
     align-content: flex-start;
 
 }
 
-#box {
+.grid {
     border: 1px solid black;
     margin: 0;
     height: 1em;
@@ -19,19 +22,3 @@ h1 {
     text-align: center;
 }
 
-.cont {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-top: 10em;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid salmon;
-    align-content: flex-start;
-}
-
-.grid {
-    border: 1px solid black;
-    height: 2em;
-    width: 2em;
-}
